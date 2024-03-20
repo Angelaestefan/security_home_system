@@ -14,6 +14,7 @@ Security Home System is a web application designed to monitor and manage home se
 - **React**: JavaScript library for building interactive user interfaces.
 - **Tailwind CSS**: Utility-first CSS framework for rapidly designing user interfaces.
 - **Next.js**: React framework for building web applications with server-side rendering and static site generation.
+- **Firebase**: Plataform of DataBase for web apps.
 
 ## Installation
 
