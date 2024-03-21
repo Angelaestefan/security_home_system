@@ -39,6 +39,7 @@ cd security-home-system
   Descarga e instala Node.js y npm desde el [sitio oficial de Node.js](https://nodejs.org/).
 ```bash
 npm install
+npm install firebase
 ``` 
 
 4. Start the application:
@@ -58,6 +59,9 @@ Contributions are welcome! If you'd like to improve this project, follow these s
 4. Push your changes to your fork: `git push origin feature/new-feature`.
 5. Submit a pull request to this repository.
 
+## Check our project!
+Visit our project in
+https://security-home-system.vercel.app/
 ## License
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
