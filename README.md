@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Security Home System
 
-## Getting Started
+Security Home System is a web application designed to monitor and manage home security using light, motion, and temperature sensors. The application provides an intuitive interface for users to visualize real-time data and access the event history recorded by the sensors.
 
-First, run the development server:
+## Features
 
+- Real-time visualization of light, motion, and temperature sensor data.
+- Historical event logging from sensors.
+- Intuitive and easy-to-use user interface.
+- Integration with modern technologies like React, Tailwind CSS, and Next.js.
+
+## Technologies Used
+
+- **React**: JavaScript library for building interactive user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapidly designing user interfaces.
+- **Next.js**: React framework for building web applications with server-side rendering and static site generation.
+- **Firebase**: Plataform of DataBase for web apps.
+
+## Installation
+
+1. Clone this repository on your local machine:
+```bash
+git clone https://github.com/Angelaestefan/security_home_system.git
+```
+2. Navigate to the project directory:
+```bash
+cd security-home-system
+```   
+3. Install dependencies:
+  Descarga e instala Node.js y npm desde el [sitio oficial de Node.js](https://nodejs.org/).
+```bash
+npm install
+``` 
+
+4. Start the application:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+``` 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contributions are welcome! If you'd like to improve this project, follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a branch for your feature: `git checkout -b feature/new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push your changes to your fork: `git push origin feature/new-feature`.
+5. Submit a pull request to this repository.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
