@@ -24,7 +24,7 @@ export function Fotoresistencia() {
 
   return (
     <div>
-      <p>{fotoresistencia}Lx</p>
+      <p>{fotoresistencia} Lux</p>
     </div>
   );
 }

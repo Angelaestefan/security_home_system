@@ -3,8 +3,8 @@ import { get, ref } from "firebase/database";
 import { useEffect, useState } from "react";
 import { database } from "./firebaseConfig";
 
-export function Distance() {
-  const [distance, setDistance] = useState("");
+export function HoraDistance() {
+  const [hora, setHora] = useState("");
 
   useEffect(() => {
     const fetchDistance = async () => {
@@ -12,10 +12,12 @@ export function Distance() {
         const distanceRef = ref(database, "distance");
         const snapshot = await get(distanceRef);
         if (snapshot.exists()) {
-          setDistance(snapshot.val());
+          // Extract the 'hora' attribute from the 'distance' object
+          const { hora } = snapshot.val();
+          setHora(hora);
         }
       } catch (error) {
-        console.error("Error fetching DISTANCE data:", error);
+        console.error("Error fetching distance data:", error);
       }
     };
 
@@ -24,7 +26,7 @@ export function Distance() {
 
   return (
     <div>
-      <p>{distance} m</p>
+      <p>Hora:{hora}</p>
     </div>
   );
 }

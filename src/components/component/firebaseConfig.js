@@ -3,15 +3,16 @@ import { initializeApp } from "firebase/app";
 import {getDatabase} from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBqgnTU4O5GO6T2vQwAtwuthRwCqOjnYhI",
-  authDomain: "security-home-99195.firebaseapp.com",
-  databaseURL: "https://security-home-99195-default-rtdb.firebaseio.com/",
-  projectId: "security-home-99195",
-  storageBucket: "security-home-99195.appspot.com",
-  messagingSenderId: "672564205502",
-  appId: "1:672564205502:web:da5832edf6e8f85a528bef",
-  measurementId: "G-BZ7N6XX8N2"
+  apiKey: "AIzaSyA_dgW_8jBnnreXMNmLLps91l1gRZygkbE",
+  authDomain: "semanatec-9cc84.firebaseapp.com",
+  databaseURL: "https://semanatec-9cc84-default-rtdb.firebaseio.com",
+  projectId: "semanatec-9cc84",
+  storageBucket: "semanatec-9cc84.appspot.com",
+  messagingSenderId: "149397337312",
+  appId: "1:149397337312:web:9339adfc8f820a05cfcc85",
+  measurementId: "G-6JEWWM6V1F"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

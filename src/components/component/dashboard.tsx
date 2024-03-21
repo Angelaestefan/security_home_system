@@ -16,7 +16,7 @@ import { ResponsiveLine } from "@nivo/line";
 import { TabsTrigger, TabsList, TabsContent, Tabs } from "@/components/ui/tabs";
 import { JSX, ClassAttributes, HTMLAttributes, SVGProps } from "react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { Led } from "./led";
+import { Hume } from "./hume";
 import { Fotoresistencia } from "./fotoresistencia";
 import { Temp } from "./temp";
 import { Distance } from "./distance";
@@ -94,8 +94,10 @@ export function Dashboard() {
               </div>
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
-                  <h4>Movimiento</h4>
-                  <div className="text-4xl font-semibold">Detectado</div>
+                  <h4>Humedad</h4>
+                  <div className="text-4xl font-semibold">
+                    <Hume />
+                  </div>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <h4>Distancia</h4>
