@@ -3,7 +3,7 @@ import { Dashboard } from "@/components/component/dashboard";
 
 export default function Home() {
   return (
-    <div className="center">
+    <div className="justify-center">
       <Dashboard />
     </div>
   );
