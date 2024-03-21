@@ -20,6 +20,8 @@ import { Hume } from "./hume";
 import { Fotoresistencia } from "./fotoresistencia";
 import { Temp } from "./temp";
 import { Distance } from "./distance";
+import { HoraDistance } from "./hora_distance";
+import { FechaDistance } from "./fecha_distance";
 
 export function Dashboard() {
   return (
@@ -161,13 +163,17 @@ export function Dashboard() {
                       <div className="grid grid-cols-4 gap-2">
                         <div>Fecha</div>
                         <div>Valor</div>
-                        <div>Tiempo</div>
+                        <div>Hora</div>
                         <div>Locación</div>
-                        <div>March 20, 2024</div>
+                        <div>
+                          <FechaDistance />
+                        </div>
                         <div>
                           <Distance />
                         </div>
-                        <div>1:30 PM</div>
+                        <div>
+                          <HoraDistance />
+                        </div>
                         <div>Cocina</div>
                       </div>
                     </CardContent>
@@ -176,7 +182,7 @@ export function Dashboard() {
                 <TabsContent value="temperature">
                   <Card className="flex flex-col">
                     <CardHeader>
-                      <CardDescription>Temperatura Actuak:</CardDescription>
+                      <CardDescription>Temperatura Actual:</CardDescription>
                       <CardTitle>
                         <Temp />
                       </CardTitle>
@@ -186,11 +192,15 @@ export function Dashboard() {
                         <div>Fecha</div>
                         <div>Valor</div>
                         <div>Tiempo</div>
-                        <div>March 20, 2024</div>
+                        <div>
+                          <FechaDistance />
+                        </div>
                         <div>
                           <Temp />
                         </div>
-                        <div>10:30 AM</div>
+                        <div>
+                          <HoraDistance />
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -210,11 +220,15 @@ export function Dashboard() {
                         <div>Fecha</div>
                         <div>Valor</div>
                         <div>Tiempo</div>
-                        <div>March 20, 2024</div>
+                        <div>
+                          <FechaDistance />
+                        </div>
                         <div>
                           <Fotoresistencia />
                         </div>
-                        <div>11:45 AM</div>
+                        <div>
+                          <HoraDistance />
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -231,9 +245,13 @@ export function Dashboard() {
                         <div>Value</div>
                         <div>Time</div>
                         <div>Location</div>
-                        <div>March 20, 2024</div>
+                        <div>
+                          <FechaDistance />
+                        </div>
                         <div>Detected</div>
-                        <div>1:30 PM</div>
+                        <div>
+                          <HoraDistance />
+                        </div>
                         <div>Kitchen</div>
                       </div>
                     </CardContent>

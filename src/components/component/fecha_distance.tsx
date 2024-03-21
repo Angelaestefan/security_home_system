@@ -3,28 +3,28 @@ import { get, ref } from "firebase/database";
 import { useEffect, useState } from "react";
 import { database } from "./firebaseConfig";
 
-export function HoraDistance() {
-  const [hora, setHora] = useState("");
+export function FechaDistance() {
+  const [fecha, setFecha] = useState("");
 
   useEffect(() => {
-    const fetchHora = async () => {
+    const fetchFecha = async () => {
       try {
-        const horaRef = ref(database, "hr");
-        const snapshot = await get(horaRef);
+        const fechaRef = ref(database, "fecha");
+        const snapshot = await get(fechaRef);
         if (snapshot.exists()) {
-          setHora(snapshot.val());
+          setFecha(snapshot.val());
         }
       } catch (error) {
         console.error("Error fetching HORA data:", error);
       }
     };
 
-    fetchHora();
+    fetchFecha();
   }, []);
 
   return (
     <div>
-      <p>{hora} </p>
+      <p>{fecha} </p>
     </div>
   );
 }
