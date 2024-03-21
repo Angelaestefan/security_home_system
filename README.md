@@ -9,6 +9,15 @@ Security Home System is a web application designed to monitor and manage home se
 - Intuitive and easy-to-use user interface.
 - Integration with modern technologies like React, Tailwind CSS, and Next.js.
 
+## Hardware components Used for monitoring station
+- Photoresistor (Light-Dependent Resistor)
+- DHT11 Temperature and Humidity Sensor
+- HC-SR04 Ultrasonic Sensor
+- LEDs (Light-Emitting Diodes)
+- NodeMCU (Microcontroller)
+- Buzzer
+
+
 ## Technologies Used
 
 - **React**: JavaScript library for building interactive user interfaces.
