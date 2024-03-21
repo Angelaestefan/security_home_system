@@ -16,6 +16,10 @@ import { ResponsiveLine } from "@nivo/line";
 import { TabsTrigger, TabsList, TabsContent, Tabs } from "@/components/ui/tabs";
 import { JSX, ClassAttributes, HTMLAttributes, SVGProps } from "react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { Led } from "./led";
+import { Fotoresistencia } from "./fotoresistencia";
+import { Temp } from "./temp";
+import { Distance } from "./distance";
 
 export function Dashboard() {
   return (
@@ -65,7 +69,7 @@ export function Dashboard() {
         <main className="flex min-h-[calc(100vh-_theme(spacing.16))] flex-1 flex-col gap-4 p-4 md:gap-8 md:p-10">
           <Card className="flex flex-col w-full max-w-4xl">
             <CardHeader className="grid gap-1.5">
-              <CardTitle>Home Security System</CardTitle>
+              <CardTitle>Security Home System</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
               <div className="grid gap-0.5">
@@ -77,11 +81,15 @@ export function Dashboard() {
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
                   <h4>Temperatura</h4>
-                  <div className="text-4xl font-semibold">22°C</div>
+                  <div className="text-4xl font-semibold">
+                    <Temp />
+                  </div>
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <h4>Intensidad de la Luz</h4>
-                  <div className="text-4xl font-semibold">320Lx</div>
+                  <div className="text-4xl font-semibold">
+                    <Fotoresistencia />
+                  </div>
                 </div>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
@@ -91,7 +99,9 @@ export function Dashboard() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <h4>Distancia</h4>
-                  <div className="text-4xl font-semibold">3m</div>
+                  <div className="text-4xl font-semibold">
+                    <Distance />
+                  </div>
                 </div>
               </div>
               <div className="grid gap-0.5">
@@ -103,8 +113,10 @@ export function Dashboard() {
               <div className="grid gap-4 md:grid-cols-2">
                 <Card className="flex flex-col">
                   <CardHeader>
-                    <CardDescription>Temperatura</CardDescription>
-                    <CardTitle>Actual: 22°C</CardTitle>
+                    <CardDescription>Temperatura Actual:</CardDescription>
+                    <CardTitle>
+                      <Temp />
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CurvedlineChart className="aspect-[4/3]" />
@@ -112,8 +124,12 @@ export function Dashboard() {
                 </Card>
                 <Card className="flex flex-col">
                   <CardHeader>
-                    <CardDescription>Intesidad de la Luz</CardDescription>
-                    <CardTitle>Actual: 320Lx</CardTitle>
+                    <CardDescription>
+                      Intesidad de la Luz Actual:
+                    </CardDescription>
+                    <CardTitle>
+                      <Fotoresistencia />
+                    </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CurvedlineChart className="aspect-[4/3]" />
@@ -146,7 +162,9 @@ export function Dashboard() {
                         <div>Tiempo</div>
                         <div>Locación</div>
                         <div>March 20, 2024</div>
-                        <div>Detected</div>
+                        <div>
+                          <Distance />
+                        </div>
                         <div>1:30 PM</div>
                         <div>Cocina</div>
                       </div>
@@ -156,8 +174,10 @@ export function Dashboard() {
                 <TabsContent value="temperature">
                   <Card className="flex flex-col">
                     <CardHeader>
-                      <CardDescription>Temperatura</CardDescription>
-                      <CardTitle>Actual: 22°C</CardTitle>
+                      <CardDescription>Temperatura Actuak:</CardDescription>
+                      <CardTitle>
+                        <Temp />
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="grid grid-cols-3 gap-2">
@@ -165,7 +185,9 @@ export function Dashboard() {
                         <div>Valor</div>
                         <div>Tiempo</div>
                         <div>March 20, 2024</div>
-                        <div>22°C</div>
+                        <div>
+                          <Temp />
+                        </div>
                         <div>10:30 AM</div>
                       </div>
                     </CardContent>
@@ -174,8 +196,12 @@ export function Dashboard() {
                 <TabsContent value="light">
                   <Card className="flex flex-col">
                     <CardHeader>
-                      <CardDescription>Intensidad de la luz</CardDescription>
-                      <CardTitle>Actual: 320Lx</CardTitle>
+                      <CardDescription>
+                        Intensidad de la luz Actual
+                      </CardDescription>
+                      <CardTitle>
+                        <Fotoresistencia />
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="grid grid-cols-3 gap-2">
@@ -183,7 +209,9 @@ export function Dashboard() {
                         <div>Valor</div>
                         <div>Tiempo</div>
                         <div>March 20, 2024</div>
-                        <div>320Lx</div>
+                        <div>
+                          <Fotoresistencia />
+                        </div>
                         <div>11:45 AM</div>
                       </div>
                     </CardContent>
